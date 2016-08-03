@@ -63,11 +63,22 @@
   "homepage": "https://github.com/aurelia/skeleton-navigation#readme",
   "aurelia": {
     "build": {
-      "resources": []
+      "resources": [
+        "aurelia-auth/auth-filter",
+        "aurelia-dialog",
+        "aurelia-dialog/ai-dialog-body",
+        "aurelia-dialog/ai-dialog-footer",
+        "aurelia-dialog/ai-dialog-header",
+        "aurelia-dialog/ai-dialog",
+        "aurelia-dialog/attach-focus",
+        "aurelia-validation"
+      ]
     }
   },
   "dependencies": {
+    "aurelia-auth": "^3.0.2",
     "aurelia-bootstrapper-webpack": "^1.0.0",
+    "aurelia-dialog": "^1.0.0-beta.3.0.0",
     "aurelia-event-aggregator": "^1.0.0",
     "aurelia-fetch-client": "^1.0.0",
     "aurelia-framework": "^1.0.0",
@@ -81,11 +92,16 @@
     "aurelia-templating-binding": "^1.0.0",
     "aurelia-templating-resources": "^1.0.0",
     "aurelia-templating-router": "^1.0.0",
+    "aurelia-validatejs": "^0.7.0",
+    "aurelia-validation": "^0.11.0",
     "bluebird": "^3.4.1",
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.6.3",
     "isomorphic-fetch": "^2.2.1",
-    "jquery": "^3.1.0"
+    "jquery": "^3.1.0",
+    "meeus": "github:sybilla/meeus",
+    "momentjs": "^1.1.14",
+    "numeral": "^1.5.3"
   },
   "devDependencies": {
     "@easy-webpack/config-aurelia": "^2.0.1",
@@ -110,6 +126,7 @@
     "@easy-webpack/core": "^1.3.2",
     "@types/bluebird": "^2.0.29",
     "@types/jasmine": "^2.2.30",
+    "@types/jquery": "^1.10.28",
     "@types/whatwg-fetch": "0.0.27",
     "aurelia-tools": "^0.2.4",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",

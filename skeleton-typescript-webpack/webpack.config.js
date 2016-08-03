@@ -5,6 +5,7 @@
  * Take a look at the README here: https://github.com/easy-webpack/core
  **/
 const easyWebpack = require('@easy-webpack/core');
+const webpack = require('webpack');
 const generateConfig = easyWebpack.default;
 const get = easyWebpack.get;
 const path = require('path');
@@ -51,7 +52,10 @@ const coreBundles = {
     'aurelia-templating',
     'aurelia-templating-binding',
     'aurelia-templating-router',
-    'aurelia-templating-resources'
+    'aurelia-templating-resources',
+    'aurelia-dialog',
+    'aurelia-validation',
+    'aurelia-auth'
   ]
 }
 
@@ -61,9 +65,17 @@ const baseConfig = {
     'aurelia-bootstrap': coreBundles.bootstrap,
     'aurelia': coreBundles.aurelia.filter(pkg => coreBundles.bootstrap.indexOf(pkg) === -1)
   },
+  resolve: {
+        alias : {
+            "signalr" : "../custom_scripts/jquery.signalR.js"
+        }
+  },
   output: {
     path: outDir,
-  }
+  },
+  plugins: [
+    new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /en|de/)
+  ]
 }
 
 // advanced configuration:
