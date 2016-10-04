@@ -6,8 +6,8 @@ submit them to StackOverflow using the tag `[aurelia]`
 http://stackoverflow.com/questions/tagged/aurelia
 or the Aurelia Gitter https://gitter.im/aurelia/discuss
 
-Durandal Inc. offers paid support agreements. Further information regarding paid support
-may be obtained by emailing support@durandal.io
+Blue Spire offers paid support agreements. Further information regarding paid support
+may be obtained by emailing support@bluespire.com
 
 Future support requests submitted here will be closed.
 
@@ -43,9 +43,9 @@ run `node -v`
 -->
 
 * **NPM Version:**
-3.8.9
+3.10.3
 <!--
-Minimum supported NPM version is 3.x
+MINIMUM SUPPOERTED NPM VERSION IS 3.x. NPM 2.x WILL NOT WORK.
 run `npm -v`
 -->
 

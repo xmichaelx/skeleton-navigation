@@ -1,6 +1,6 @@
 {
   "name": "aurelia-skeleton-navigation-webpack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A starter kit for building a standard navigation-style app with Aurelia and webpack.",
   "main": "dist/electron.js",
   "productName": "Aurelia Electron",
@@ -128,7 +128,7 @@
     "protractor": "^4.0.0",
     "rimraf": "^2.5.4",
     "wait-on": "^1.5.2",
-    "webpack": ">=2.1.0-beta.13 || ^2.1.0",
+    "webpack": "2.1.0-beta.22",
     "webpack-dev-server": ">=2.1.0-beta.0 || ^2.1.0"
   },
   "babel": {
