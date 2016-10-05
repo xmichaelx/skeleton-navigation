@@ -67,7 +67,7 @@ const baseConfig = {
   },
   resolve: {
         alias : {
-            "signalr" : "../custom_scripts/jquery.signalR.js"
+            "signalr" : "../../custom_scripts/jquery.signalR.js"
         }
   },
   output: {
