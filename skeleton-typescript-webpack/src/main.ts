@@ -58,8 +58,8 @@ export async function configure(aurelia: Aurelia) {
     .plugin("aurelia-dialog", (config) => {
       config.useDefaults();
     })
-    .standardConfiguration()
-    .developmentLogging();
+    // .developmentLogging()
+    .standardConfiguration();
 
   // Uncomment the line below to enable animation.
   // aurelia.use.plugin('aurelia-animator-css');
